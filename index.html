@@ -3,22 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- https://fontawesome.com/search -->
     <link rel="stylesheet" href="css/styles.css">
-    <title>Tarjetita</title>
+    <title>Trabajo Practico Tarjetita</title>
 </head>
 <body>
     <div class="container">
         <article class="tarjeta">
-            <div class="encabezado">1</div>
+            <div class="header">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-linux"></i>
+                <div class="rigth">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <!-- <img src="img/pupuchaccueil-fotor-bg-remover-2024040919486.png" class="img"></img> -->
+            </div>
             <div class="producto">
-                <ul class="sel_colores">
+                <ul class="sel_color">
                     <li class="negro"></li>
+                    <li class="rojo"></li>
                     <li class="blanco"></li>
-                    <li class="gris"></li>
-                    <li class="beige"></li>
+                    <li class="violeta"></li>
                 </ul>
-                <span>Remera Oversize</span>
-                <div class="precio">20.000</div>
+                <span>Remera lisa</span>
+                <div class="precio">$ 2131</div>
                 <ul class="talles">
                     <li>S</li>
                     <li>M</li>
@@ -26,8 +38,23 @@
                     <li>XL</li>
                 </ul>
             </div>
-            <div class="desc_prod">3</div>
-            <div class="botonera">4</div>
+            <div class="desc_product">
+                <h3>Remera Ultima Generacion Marca Pupuch 100% Original</h3>
+                <details>
+                    Ultimas unidades disponibles.<br>
+                    Llame ya!!!
+                </details>
+                <!-- <input type="search" list="talles">
+                <datalist id="talles">
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                    <option value="XL">Extra Large</option>
+                </datalist> -->
+            </div>
+            <div class="bottom">
+                <button type="button">Agregar al carrito</button>
+            </div>
         </article>
     </div>
 </body>
