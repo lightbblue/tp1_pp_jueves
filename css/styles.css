@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+    transition: all 0.5s ease-in-out;
 }
 body{
     height: 100vh;
@@ -27,33 +28,47 @@ body{
     display: grid;
     place-items: center;
     & .tarjeta{
-        height: 600px;
+        height: 600px auto;
         width: 50%;
         max-width: 350px;
         background-color: #f1f1f1;
         border-radius: 20px;
         padding: 10px;
         box-shadow: 10px 10px 10px -5px black;
+
         & .header{
             height: 100px;
             width: 100%;
             background-color: #1f1f1f;
             color: #f1f1f1;
             border-radius: 10px 10px 0 0;
-            padding: 10px;
+            position: relative;
+            overflow: hidden;
             /* display: flex;
             align-items: center;
             justify-content: center; */
-            & .img{
-                height: 130%;
-                object-fit: cover;
+            & .img-producto{
+                width: 100%;
+                left: 0;
+                top: 0;
+                position: absolute;
+                z-index: 0;
             }
-            & .right{
-                right: 0;
+            & .iconos{
+                position: absolute;
+                width: 100%;
+                z-index: 1;
+                color: black;
+                top: 0;
+                left: 0;
             }
         }
+        & .header:hover{
+            height: 300px;
+        
+        }
         & .producto{
-            height: 200px;
+            height: 180px auto;
             width: 100%;
             background-color: #f1f1f1;
             padding: 10px;
@@ -69,6 +84,8 @@ body{
             & span{
                 font-family: Impact;
                 font-size: 24px;
+                text-wrap: balance;
+                text-align: center;
             }
             & ul.sel_color{
                 display: flex;
